@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  /* overflow-x: hidden; */
+}
+*::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* CTA BUTTON */
+#ctabutton {
+  /* display: none; */
+  animation: action 1s infinite alternate;
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+/* Medium Styles */
+#medium-widget {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 10px;
+}
+.medium-widget-article__item {
+  padding: 0;
+}
+.medium-widget-article__title {
+  font-family: Nunito;
+  font-size: 28px !important;
+  line-height: 34px !important;
+  font-weight: 500 !important ;
+}
+/* Medium Styles */
+
+.medium-widget-article__description {
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.medium-widget-article__author,
+.medium-widget-article__date {
+  font-family: Nunito;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  medium-widget-article__title {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+  /* Medium Styles */
+
+  .medium-widget-article__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .medium-widget-article__author,
+  .medium-widget-article__date {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
