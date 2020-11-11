@@ -135,7 +135,7 @@ const NavBar: React.FC<{}> = () => {
               spy={true}
               smooth={true}
               offset={-50}
-              duration={1000}
+              duration={200}
               onClick={() => setOpen(false)}
             >
               Home
@@ -147,7 +147,7 @@ const NavBar: React.FC<{}> = () => {
               spy={true}
               smooth={true}
               offset={-50}
-              duration={1000}
+              duration={200}
               onClick={() => setOpen(false)}
             >
               About
@@ -171,7 +171,7 @@ const NavBar: React.FC<{}> = () => {
               spy={true}
               smooth={true}
               offset={-50}
-              duration={1000}
+              duration={200}
               onClick={() => setOpen(false)}
             >
               Services
@@ -183,7 +183,7 @@ const NavBar: React.FC<{}> = () => {
               spy={true}
               smooth={true}
               offset={-50}
-              duration={1000}
+              duration={200}
               onClick={() => setOpen(false)}
             >
               Blog
@@ -195,7 +195,7 @@ const NavBar: React.FC<{}> = () => {
               spy={true}
               smooth={true}
               offset={-50}
-              duration={1000}
+              duration={200}
               onClick={() => setOpen(false)}
             >
               Contact
@@ -217,7 +217,7 @@ const NavBar: React.FC<{}> = () => {
             spy={true}
             smooth={true}
             offset={-50}
-            duration={1000}
+            duration={200}
           >
             Home
           </Link>
@@ -228,7 +228,7 @@ const NavBar: React.FC<{}> = () => {
             spy={true}
             smooth={true}
             offset={-50}
-            duration={1000}
+            duration={200}
           >
             About
           </Link>
@@ -250,7 +250,7 @@ const NavBar: React.FC<{}> = () => {
             spy={true}
             smooth={true}
             offset={-50}
-            duration={1000}
+            duration={200}
           >
             Services
           </Link>
@@ -261,7 +261,7 @@ const NavBar: React.FC<{}> = () => {
             spy={true}
             smooth={true}
             offset={-50}
-            duration={1000}
+            duration={200}
           >
             Blog
           </Link>
@@ -272,7 +272,7 @@ const NavBar: React.FC<{}> = () => {
             spy={true}
             smooth={true}
             offset={-50}
-            duration={1000}
+            duration={200}
           >
             Contact
           </Link>

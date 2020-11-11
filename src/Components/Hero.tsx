@@ -91,7 +91,7 @@ const Hero = () => {
         data-aos="fade-left"
         onClick={() =>
           scroller.scrollTo("about", {
-            duration: 1500,
+            duration: 100,
             delay: 200,
             smooth: true,
           })
