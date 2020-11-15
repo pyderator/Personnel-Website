@@ -106,7 +106,7 @@ const AboutMe = () => {
             <p className={classes.text}>
               I also do love designing things, cloning the existing one. I just
               love solving problems with the technology that I know. Being an
-              Ethical Hacking Student, I do also have knowldege about
+              Ethical Hacking Student, I do also have knowledge about
               Networking, Hacking, Forensics etc although I have still a lot to
               learn.
             </p>
