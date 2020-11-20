@@ -36,6 +36,11 @@ const useStyles = makeStyles((theme: Theme) => ({
       width: "100%",
       overflow: "hidden",
     },
+    [theme.breakpoints.down("xs")]: {
+      height: "78%",
+      width: "100%",
+      overflow: "hidden",
+    },
   },
   title1: {
     fontFamily: "Nunito",
@@ -81,7 +86,7 @@ const Hero = () => {
           I'm Gaurav Jha
         </h1>
         <br />
-        <h1 className={classes.title1}>
+        <h1 className={classes.title1} data-aos="fade-right">
           <span className={classes.title_merng}>MERNG</span> Stack Developer
         </h1>
       </div>
