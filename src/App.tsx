@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     setTimeout(
       (document.getElementById("loader")!.style.display = "none"),
-      11000,
+      21000,
     );
   }, []);
   return (

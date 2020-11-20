@@ -81,7 +81,7 @@ const Hero = () => {
           I'm Gaurav Jha
         </h1>
         <br />
-        <h1 className={classes.title1} data-aos="fade-right">
+        <h1 className={classes.title1}>
           <span className={classes.title_merng}>MERNG</span> Stack Developer
         </h1>
       </div>
