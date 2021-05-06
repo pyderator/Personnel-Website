@@ -1,8 +1,9 @@
 import React from "react";
-import myImage from "../Assets/Images/pyderator.png";
+import myImage from "../Assets/Images/pyderator.jpg";
 import { Button, makeStyles, Theme } from "@material-ui/core";
 import { scroller } from "react-scroll";
 import Skills from "./Skills";
+import { purple } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -76,7 +77,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: "flex",
     justifyContent: "center",
     "& > button": {
-      minHeight: "50px",
+      // minHeight: "50px",
+      backgroundColor: purple,
       minWidth: "170px",
       fontFamily: "Nunito",
       fontSize: "16px",

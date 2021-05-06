@@ -28,7 +28,6 @@ const Skill: React.FC<{ value: string; index: number }> = ({
   const classes = useStyles();
   const [name, data] = value.split(":");
 
-  console.log(name, data);
   return (
     <Grid item sm={12} md={6} className={classes.root}>
       <p className={classes.name}>{name}</p>

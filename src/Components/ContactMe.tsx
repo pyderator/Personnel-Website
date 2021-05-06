@@ -106,7 +106,6 @@ function ContactMe() {
                   body: JSON.stringify(values),
                 });
                 resetForm({});
-                console.log("asdas", response.status);
                 setSubmitting(false);
                 if (response.status !== 400) {
                   return setOpen(true);
@@ -115,123 +114,83 @@ function ContactMe() {
               }}
             >
               {({ isSubmitting, errors, touched }) => (
-                console.log(errors),
-                (
-                  <Form>
-                    <Grid container>
-                      <Grid
-                        item
-                        md={6}
-                        sm={12}
-                        xs={12}
-                        className={classes.item}
-                      >
-                        <Field
-                          as={TextField}
-                          fullWidth
-                          label="First Name"
-                          name="firstName"
-                          required
-                          error={touched && !!errors.firstName}
-                          helperText={errors.firstName?.split("firstName")[1]}
-                        />
-                      </Grid>
-                      <Grid
-                        item
-                        md={6}
-                        sm={12}
-                        xs={12}
-                        className={classes.item}
-                      >
-                        <Field
-                          as={TextField}
-                          fullWidth
-                          label="Last Name"
-                          name="lastName"
-                          required
-                          error={touched && !!errors.lastName}
-                          helperText={errors.lastName?.split("lastName")[1]}
-                        />
-                      </Grid>
-                      <Grid
-                        item
-                        md={12}
-                        sm={12}
-                        xs={12}
-                        className={classes.item}
-                      >
-                        <Field
-                          as={TextField}
-                          fullWidth
-                          label="Email"
-                          name="email"
-                          required
-                          error={touched && !!errors.email}
-                          helperText={errors.email?.split("email")[1]}
-                        />
-                      </Grid>
-                      <Grid
-                        item
-                        md={12}
-                        sm={12}
-                        xs={12}
-                        className={classes.item}
-                      >
-                        <Field
-                          as={TextField}
-                          fullWidth
-                          label="Subject"
-                          name="subject"
-                          required
-                          error={touched && !!errors.subject}
-                          helperText={errors.subject?.split("subject")[1]}
-                        />
-                      </Grid>
-                      <Grid
-                        item
-                        md={12}
-                        sm={12}
-                        xs={12}
-                        className={classes.item}
-                      >
-                        <Field
-                          as={TextField}
-                          fullWidth
-                          label="Message"
-                          name="text"
-                          multiline
-                          rowsMax={4}
-                          required
-                          error={touched && !!errors.text}
-                          helperText={errors.text?.split("text")[1]}
-                        />
-                      </Grid>
-                      <Grid
-                        item
-                        md={12}
-                        sm={12}
-                        xs={12}
-                        className={classes.item}
-                      >
-                        <Button
-                          variant="contained"
-                          color="secondary"
-                          type="submit"
-                          disabled={isSubmitting}
-                        >
-                          {console.log(isSubmitting)}
-                          {!isSubmitting ? (
-                            "Submit"
-                          ) : (
-                            <CircularProgress
-                              style={{ width: "50%", height: "50%" }}
-                            />
-                          )}
-                        </Button>
-                      </Grid>
+                <Form>
+                  <Grid container>
+                    <Grid item md={6} sm={12} xs={12} className={classes.item}>
+                      <Field
+                        as={TextField}
+                        fullWidth
+                        label="First Name"
+                        name="firstName"
+                        required
+                        error={touched && !!errors.firstName}
+                        helperText={errors.firstName?.split("firstName")[1]}
+                      />
                     </Grid>
-                  </Form>
-                )
+                    <Grid item md={6} sm={12} xs={12} className={classes.item}>
+                      <Field
+                        as={TextField}
+                        fullWidth
+                        label="Last Name"
+                        name="lastName"
+                        required
+                        error={touched && !!errors.lastName}
+                        helperText={errors.lastName?.split("lastName")[1]}
+                      />
+                    </Grid>
+                    <Grid item md={12} sm={12} xs={12} className={classes.item}>
+                      <Field
+                        as={TextField}
+                        fullWidth
+                        label="Email"
+                        name="email"
+                        required
+                        error={touched && !!errors.email}
+                        helperText={errors.email?.split("email")[1]}
+                      />
+                    </Grid>
+                    <Grid item md={12} sm={12} xs={12} className={classes.item}>
+                      <Field
+                        as={TextField}
+                        fullWidth
+                        label="Subject"
+                        name="subject"
+                        required
+                        error={touched && !!errors.subject}
+                        helperText={errors.subject?.split("subject")[1]}
+                      />
+                    </Grid>
+                    <Grid item md={12} sm={12} xs={12} className={classes.item}>
+                      <Field
+                        as={TextField}
+                        fullWidth
+                        label="Message"
+                        name="text"
+                        multiline
+                        rowsMax={4}
+                        required
+                        error={touched && !!errors.text}
+                        helperText={errors.text?.split("text")[1]}
+                      />
+                    </Grid>
+                    <Grid item md={12} sm={12} xs={12} className={classes.item}>
+                      <Button
+                        variant="contained"
+                        color="secondary"
+                        type="submit"
+                        disabled={isSubmitting}
+                      >
+                        {!isSubmitting ? (
+                          "Submit"
+                        ) : (
+                          <CircularProgress
+                            style={{ width: "50%", height: "50%" }}
+                          />
+                        )}
+                      </Button>
+                    </Grid>
+                  </Grid>
+                </Form>
               )}
             </Formik>
           </Grid>

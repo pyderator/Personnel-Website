@@ -7,14 +7,6 @@ import BlogPosts from "./Components/BlogPosts";
 import ContactMe from "./Components/ContactMe";
 import Footer from "./Components/Footer";
 function App() {
-  useEffect(() => {
-    document.getElementById("root")!.style.display = "none";
-    setTimeout(
-      ((document.getElementById("loader")!.style.display = "none"),
-      (document.getElementById("root")!.style.display = "block")),
-      21000,
-    );
-  }, []);
   return (
     <div>
       <NavBar />
